@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>OpenBoard Clone</title>
+  </head>
+  <body>
+    <div class="options-cont">
+      <i class="fa-solid fa-bars"></i>
+      <!-- <i class="fa-solid fa-xmark"></i> -->
+    </div>
+    <div class="tools-cont scale-tools">
+      <img src="./img/Pencil.svg" alt="" class="pencil" />
+      <img src="./img/erasser.svg" alt="" class="eraser" />
+      <img src="./img/download.svg" alt="" class="download" />
+      <img src="./img/upload.svg" alt="" class="upload" />
+      <img src="./img/notes.svg" alt="" class="sticky" />
+      <img src="./img/undo.svg" alt="" class="undo" />
+      <img src="./img/redo.svg" alt="" class="redo" />
+    </div>
+    <div class="pencil-tool-cont">
+      <div class="pencil-width-cont">
+        <input type="range" min="2" max="10" value="3" class="pencil-width" />
+      </div>
+      <div class="pencil-color-cont">
+        <div class="black pencil-color"></div>
+        <div class="red pencil-color"></div>
+        <div class="blue pencil-color"></div>
+      </div>
+    </div>
+    <div class="erraser-tool-cont">
+      <input type="range" min="2" max="10" value="3" class="erasser-width" />
+    </div>
+
+    <!-- <div class="sticky-cont">
+      <div class="header-cont">
+        <div class="minimize"></div>
+        <div class="remove"></div>
+      </div>
+      <div class="note-cont">
+        <textarea></textarea>
+      </div>
+    </div> -->
+
+    <canvas></canvas>
+    <!-- <script
+      src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+      integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      let socket = io.connect("http://localhost:5000");
+    </script> -->
+    <script src="./script.js"></script>
+    <script src="./canves.js"></script>
+  </body>
+</html>
